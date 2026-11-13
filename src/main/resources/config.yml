@@ -1,0 +1,32 @@
+# Number of home slots every player gets.
+# Give more with permissions homes.limit.<number> (e.g. homes.limit.6).
+max-homes: 3
+
+# true  = the HOMES menu is shown again after a home is set (so you see it appear)
+# false = the menu closes after a home is set
+keep-gui-open-after-set: true
+
+# Sizes are in GUI pixels. Make them smaller if the menus do not fit your window.
+layout:
+  home-columns: 3
+  home-button-width: 100
+  action-button-width: 120
+  icon-columns: 4
+  icon-button-width: 140
+  search-box-width: 220
+
+# On first start the plugin downloads Mojang's client jar once, reads which texture every item
+# really uses, and caches it in icon-cache.yml (delete that file to redo it).
+# Set to false for servers without internet; built-in guesses are used instead.
+auto-resolve-icons: true
+
+# Bed icons (the default home icon too) come from the HomesIcons resource pack (pillow side).
+# Set to false to use the vanilla bed sprite instead (no pack needed).
+use-resource-pack-beds: true
+
+# Fix an icon that shows up wrong (purple/black square). Format: <atlas>:<sprite path>
+#   blocks:block/<texture>   -> a block texture
+#   items:item/<texture>     -> an item texture
+# Example:
+#   acacia_stairs: "blocks:block/acacia_planks"
+icon-overrides: {}
